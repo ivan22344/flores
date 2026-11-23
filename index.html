@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Flores</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="relative w-full h-full overflow-hidden">
+
+  <!-- 3D Canvas Container -->
+  <div id="canvas-container"></div>
+
+  <!-- Fixed Bouquet Note -->
+  <div id="dedication-badge"
+    class="pointer-events-none absolute bottom-5 left-4 md:left-6 z-10 glass-panel rounded-2xl p-4 max-w-xs shadow-2xl">
+    <span class="block text-[11px] uppercase tracking-widest text-rose-300/80 font-semibold mb-1">Nota</span>
+    <p class="serif-title italic text-sm md:text-base text-rose-50 leading-snug">“No podía enviarte un jardín entero,
+      así que empecé con este ramo.”</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
